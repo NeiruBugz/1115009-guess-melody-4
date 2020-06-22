@@ -5,8 +5,12 @@ import WelcomeScreen from '../welcome-screen/welcome-screen.jsx';
 
 const App = ({settings}) => {
   const {errorsCount} = settings;
+  const handleWelcomeButtonClick = () => {};
   return (
-    <WelcomeScreen errorsCount={errorsCount} />
+    <WelcomeScreen
+      errorsCount={errorsCount}
+      onWelcomeButtonClick={handleWelcomeButtonClick}
+    />
   );
 };
 
